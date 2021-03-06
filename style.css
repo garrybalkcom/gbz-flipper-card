@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+*{
+    font-family: 'Akaya Telivigala', cursive;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    background:linear-gradient(45deg, pink, orange);
+}
+.card, .card_front,
+ .content, .card_back{
+     position:absolute;
+ }
+.card{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 400px;
+    width:290px;
+    transform-style:preserve-3d;
+    perspective: 1000px;
+
+}
+.card_front, .card_back{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://fashionista.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTc2ODYwOTM3NTk1MTM1NTcx/megan-thee-stallion-2020.jpg');
+    height:100%;
+    width:100%;
+    text-align:center;
+    background-size: cover;
+    background-position:center ;
+    border-radius:12px;
+    backface-visibility: hidden;
+    transform-style:preserve-3d;
+    transition:.7s;
+}
+.content{
+    left:0;
+    top:50%;
+    width:100%;
+    perspective: 100px;
+    transform: translateY(-50%) translateZ(60px) scale(.94);
+}
+.front p{
+    color:white;
+    font-size:35px;
+}
+.front span{
+    color:white;
+    font-size:25px;
+}
+.card_back{
+    transform: rotateY(-180deg);
+    background:linear-gradient(45deg,blue,green);
+}
+.back{
+    color:white;
+}
+.back h2{
+    color:white;
+    padding-bottom:5px;
+}
+.back span{
+    font-size:25px;
+}
+.card:hover >.card_front{
+    transform:rotateY(-180deg);
+}
+.card:hover > .card_back{
+    transform:rotateY(0deg);
+}
+
+.card-active >.card_front{
+    transform:rotateY(-180deg);
+}
+.card-active > .card_back{
+    transform:rotateY(0deg);
+}
+.icons{
+    margin:10px 0;
+}
+.icons .fab{
+    color:white;
+    font-size:20px;
+    height:40px;
+    width:40px;
+    background:green;
+    line-height:40px;
+    border-radius:50%;
+    margin:0 5px;
+    cursor: pointer;
+
+}
+.icons .fab:hover{
+   background:white;
+   color:green;
+
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3d2f619bc6.js" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="card">
+
+        <div class="card_front">
+            <div class="front content">
+                <p>Megan The Stallion</p>
+                <span>Musician</span>
+            </div>
+        </div>
+
+        <div class="card_back">
+            <div class="back content">
+                <h2>Tina Snow</h2>
+                <span>Follow Me</span>
+                <div class="icons">
+                    <a href="https://www.instagram.com/theestallion/"  target="_blank"><i class="fab fa-instagram-square"></i></a>  
+                    <a href="https://www.facebook.com/MeganTheeStallion"  target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/theestallion?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank" ><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/channel/UCKrdjiuS66yXOdEZ_cOD_TA" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   <script>
+       $('.card').click(function(){
+           $('.card').toggleClass('card-active');
+       })
+   </script>
+</body>
+</html>
